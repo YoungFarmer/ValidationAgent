@@ -1,0 +1,30 @@
+{
+  "spec_id": "spec_001",
+  "feature_name": "coupon flow",
+  "in_scope": [
+    "show coupon entry"
+  ],
+  "out_of_scope": [
+    "coupon backend issuing"
+  ],
+  "acceptance_items": [
+    {
+      "id": "AC-001",
+      "title": "Show coupon entry",
+      "type": "ui",
+      "priority": "high",
+      "preconditions": [
+        "user logged in"
+      ],
+      "steps": [
+        "open order confirm"
+      ],
+      "expected": [
+        "coupon entry visible"
+      ],
+      "evidence": [
+        "screenshot"
+      ]
+    }
+  ]
+}

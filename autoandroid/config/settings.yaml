@@ -1,0 +1,3 @@
+app_name: autoandroid
+default_platform: android
+default_mode: emulator_first

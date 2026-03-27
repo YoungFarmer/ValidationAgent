@@ -1,0 +1,27 @@
+{
+  "request_id": "req_001",
+  "feature_name": "coupon flow",
+  "goal": "verify feature completion",
+  "requirement_sources": [
+    {
+      "type": "prd",
+      "content": "Show coupon entry and update total after selection"
+    }
+  ],
+  "build": {
+    "source_type": "apk",
+    "ref": "app-debug.apk"
+  },
+  "environment": {
+    "platform": "android",
+    "mode": "emulator_first"
+  },
+  "credentials": {
+    "profiles": [
+      "buyer_a"
+    ]
+  },
+  "constraints": {
+    "max_loops": 3
+  }
+}

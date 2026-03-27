@@ -1,0 +1,41 @@
+{
+  "request_id": "req_sunflower_launch_smoke",
+  "feature_name": "sunflower launch smoke",
+  "goal": "verify that Sunflower launches and shows the empty garden state on first open",
+  "requirement_sources": [
+    {
+      "type": "acceptance_item",
+      "title": "Launch app and show empty garden state",
+      "priority": "high",
+      "steps": [
+        "install the app",
+        "launch the app"
+      ],
+      "expected": [
+        "Sunflower",
+        "My garden",
+        "Your garden is empty",
+        "Add plant"
+      ],
+      "evidence": [
+        "screenshot"
+      ]
+    }
+  ],
+  "build": {
+    "source_type": "apk",
+    "ref": "/Volumes/MySSD/sunflower/app/build/outputs/apk/debug/app-debug.apk",
+    "app_id": "com.google.samples.apps.sunflower",
+    "launch_activity": ".GardenActivity"
+  },
+  "environment": {
+    "platform": "android",
+    "mode": "connected_device"
+  },
+  "credentials": {
+    "profiles": []
+  },
+  "constraints": {
+    "max_loops": 1
+  }
+}

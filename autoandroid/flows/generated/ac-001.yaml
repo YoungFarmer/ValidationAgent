@@ -1,0 +1,7 @@
+appId: com.google.samples.apps.sunflower
+---
+- launchApp
+- assertVisible: "Sunflower"
+- assertVisible: "My garden"
+- assertVisible: "Your garden is empty"
+- assertVisible: "Add plant"
